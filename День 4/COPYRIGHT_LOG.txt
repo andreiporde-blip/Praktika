@@ -1,0 +1,76 @@
+=== COPYRIGHT LOG ===
+Подкаст: Цифровой Помощник
+Тема: Как распознать фишинговый сайт и защитить свои данные
+Дата создания: 2026
+Автор проекта: Шабалин Альберт
+
+=== ГОЛОСА (TTS - Text-to-Speech) ===
+
+1. ВЕДУЩИЙ (Голос 1)
+   Имя голоса: Dmitry
+   ID: 70001
+   Язык: Russian (RU)
+   Пол: Male (Мужской)
+   Сервис: TTSMaker 
+   Лицензия: Бесплатно для некоммерческого использования
+   Ссылка на сервис: https://ttsmaker.com/
+   Ограничение: 3000 символов за конверсию
+
+2. ЭКСПЕРТ (Голос 2)
+   Имя голоса: Lukin
+   ID: 567
+   Язык: Russian (RU)
+   Пол: Female (Женский)
+   Сервис: TTSMaker
+   Лицензия: Неограниченное использование (Unlimited)
+   Ссылка на сервис: https://ttsmaker.com/
+   Ограничение: 1000 символов за конверсию
+
+3. ТЕХНИЧЕСКИЙ ГОЛОС (Голос 3)
+   Имя голоса: Irina
+   ID: 831
+   Язык: Russian (RU)
+   Пол: Female (Женский)
+   Сервис: TTSMaker 
+   Лицензия: Неограниченное использование (Unlimited)
+   Ссылка на сервис: https://ttsmaker.com/
+   Ограничение: 5000 символов за конверсию
+   Особенность: Поддержка очень длинного текста
+
+=== ЗВУКОВЫЕ ЭФФЕКТЫ ===
+
+1. Джингл (вступление)
+   Автор: Leonard.B.Blaesing
+   Лицензия: Creative Commons 0 (CC0) - Public Domain
+   Ссылка: https://freesound.org/people/Leonard.B.Blaesing/sounds/645430/
+
+2. Звуковой эффект "Вуш" (переход)
+   Автор: is44c
+   Лицензия: Creative Commons 0 (CC0) - Public Domain
+   Ссылка: https://freesound.org/people/is44c/sounds/368360/
+
+3. Звуковой эффект "Клик"
+   Автор: 7778
+   Лицензия: Creative Commons 0 (CC0) - Public Domain
+   Ссылка: https://freesound.org/people/7778/sounds/202312/
+
+4. Звуковой эффект "Глитч"
+   Автор: JacksonMiller0
+   Лицензия: Creative Commons 0 (CC0) - Public Domain
+   Ссылка: https://freesound.org/people/JacksonMiller0/sounds/371603/
+
+=== ФОНОВАЯ МУЗЫКА ===
+Название: chill background music #4
+Автор: ZHRØ
+Лицензия: Creative Commons 0 (CC0) - Public Domain
+Ссылка: https://freesound.org/people/ZHRØ/sounds/817498/
+
+=== ИСПОЛЬЗОВАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ===
+- FL Studio (аудиоредактор) - https://www.image-line.com/
+- TTSMaker (TTS генерация)
+- Freesound.org (звуковые эффекты)
+
+=== ПРИМЕЧАНИЯ ===
+Все голоса сгенерированы с помощью TTS (Text-to-Speech) технологий.
+Использование голосов соответствует условиям лицензий сервисов.
+Звуковые эффекты распространяются под лицензией CC0 (Public Domain).
