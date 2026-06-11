@@ -3,60 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Урок 2: Основы Python — ЦифроПомощник</title>
+    <title>Курс: Основы Python — ЦифроПомощник</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Шапка -->
     <header class="header">
-        <div class="container header-content">
-            <div class="logo-wrapper">
-                <img src="logo.png" alt="ЦифроПомощник" class="logo">
-                <span class="logo-text">ЦифроПомощник</span>
-            </div>
-            <nav class="nav">
-   		 <a href="index.html">Главная</a>
-  		 <a href="courses.html">Курсы</a>
-   		 <a href="register.html">Профиль</a>
- 	  	 <a href="lesson.html">Уроки</a>
-	</nav>
-            <a href="register.html" class="btn-login">ВОЙТИ</a>
+    <div class="container header-content">
+        <div class="logo-wrapper">
+            <img src="logo.png" alt="ЦифроПомощник" class="logo">
+            <span class="logo-text">ЦифроПомощник</span>
         </div>
-    </header>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="courses.html">Курсы</a>
+            <a href="register.html">Профиль</a>
+            <a href="lesson.html" class="active">Уроки</a>
+        </nav>
+        <a href="login.html" class="btn-login">ВОЙТИ</a>
+    </div>
+</header>
 
+    <!-- Баннер курса -->
     <section class="lesson-banner">
         <div class="container">
-            <h1>Урок 2: Основы Python</h1>
-            <p>Тема: Переменные и типы данных</p>
+            <h1>Курс: Основы Python</h1>
+            <p>Изучи программирование с нуля</p>
         </div>
     </section>
 
+    <!-- Основной контент -->
     <section class="lesson-content">
-        <div class="container lesson-grid">
-            <div class="video-block">
-                <div class="video-placeholder">
-                    <div class="play-btn">▶</div>
-                    <p>Загрузка Видеоролика...</p>
-                </div>
-                <div class="lesson-buttons">
-                    <a href="#" class="btn-test">Пройти тест</a>
-                    <a href="#" class="btn-download">Скачать материал</a>
+        <div class="container">
+            
+            <!-- Список уроков (виден по умолчанию) -->
+            <div id="lessonsList" class="lessons-list-container">
+                <h2 class="section-title">Список уроков</h2>
+                <div class="lessons-grid">
+                    
+                    <div class="lesson-item" onclick="openLesson(0)">
+                        <div class="lesson-icon">📹</div>
+                        <div class="lesson-info">
+                            <h3>1. Введение в язык Python</h3>
+                            <p>Что такое Python, установка и первая программа</p>
+                            <span class="lesson-duration">⏱️ 15 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-item" onclick="openLesson(1)">
+                        <div class="lesson-icon">📹</div>
+                        <div class="lesson-info">
+                            <h3>2. Переменные и типы данных</h3>
+                            <p>Числа, строки, логический тип. Работа с переменными</p>
+                            <span class="lesson-duration">⏱️ 20 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-item" onclick="openLesson(2)">
+                        <div class="lesson-icon">📹</div>
+                        <div class="lesson-info">
+                            <h3>3. Условия и ветвления</h3>
+                            <p>Операторы if, elif, else. Логические операции</p>
+                            <span class="lesson-duration">⏱️ 25 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-item" onclick="openLesson(3)">
+                        <div class="lesson-icon">📹</div>
+                        <div class="lesson-info">
+                            <h3>4. Циклы For и While</h3>
+                            <p>Итерации, break, continue. Практические примеры</p>
+                            <span class="lesson-duration">⏱️ 30 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-item" onclick="openLesson(4)">
+                        <div class="lesson-icon">📹</div>
+                        <div class="lesson-info">
+                            <h3>5. Списки и кортежи</h3>
+                            <p>Работа с коллекциями данных. Методы списков</p>
+                            <span class="lesson-duration">⏱️ 25 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-item" onclick="openLesson(5)">
+                        <div class="lesson-icon">📹</div>
+                        <div class="lesson-info">
+                            <h3>6. Функции</h3>
+                            <p>Создание и вызов функций. Параметры и возврат значения</p>
+                            <span class="lesson-duration">⏱️ 35 минут</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <aside class="lessons-list">
-                <h3>Список Уроков:</h3>
-                <ol>
-                    <li><a href="#">Введение в язык</a></li>
-                    <li class="active">Переменные</li>
-                    <li><a href="#">Условия и ветвления</a></li>
-                    <li><a href="#">Циклы For и While</a></li>
-                </ol>
-                <a href="#" class="btn-all-lessons">Открыть список уроков</a>
-            </aside>
+            <!-- Просмотр урока (скрыт по умолчанию) -->
+            <div id="lessonView" class="lesson-view-container" style="display: none;">
+                
+                <!-- Кнопка назад -->
+                <button class="btn-back" onclick="backToList()">← Назад к списку уроков</button>
+
+                <div class="lesson-grid">
+                    <!-- Видео и материалы -->
+                    <div class="video-block">
+                        <div class="video-placeholder" id="videoPlayer">
+                            <div class="play-btn">▶</div>
+                            <p id="videoTitle">Загрузка видеоролика...</p>
+                        </div>
+                        
+                        <div class="lesson-details">
+                            <h2 id="lessonTitle">Название урока</h2>
+                            <p id="lessonDescription">Описание урока</p>
+                            
+                            <div class="lesson-buttons">
+                                <a href="#" class="btn-test">Пройти тест</a>
+                                <a href="#" class="btn-download">📥 Скачать материал</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Навигация по урокам -->
+                    <aside class="lessons-sidebar">
+                        <h3>Содержание курса</h3>
+                        <div class="sidebar-lessons" id="sidebarLessonsList">
+                            <!-- Заполняется через JavaScript -->
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-content">
             <div class="logo-wrapper">
@@ -66,6 +148,102 @@
             <p class="copyright">©2026. Все права защищены.</p>
         </div>
     </footer>
+
+    <script>
+        // Данные уроков
+        const lessons = [
+            {
+                title: "1. Введение в язык Python",
+                description: "Что такое Python, установка и первая программа",
+                duration: "15 минут",
+                videoTitle: "Введение в Python",
+                fullDescription: "В этом уроке вы узнаете что такое Python, как его установить и написать свою первую программу 'Hello World'."
+            },
+            {
+                title: "2. Переменные и типы данных",
+                description: "Числа, строки, логический тип. Работа с переменными",
+                duration: "20 минут",
+                videoTitle: "Переменные и типы данных",
+                fullDescription: "Изучаем переменные, типы данных (int, float, str, bool) и базовые операции с ними."
+            },
+            {
+                title: "3. Условия и ветвления",
+                description: "Операторы if, elif, else. Логические операции",
+                duration: "25 минут",
+                videoTitle: "Условия и ветвления",
+                fullDescription: "Учимся принимать решения в коде с помощью условных операторов if, elif, else."
+            },
+            {
+                title: "4. Циклы For и While",
+                description: "Итерации, break, continue. Практические примеры",
+                duration: "30 минут",
+                videoTitle: "Циклы For и While",
+                fullDescription: "Работаем с циклами for и while, изучаем break и continue для управления циклами."
+            },
+            {
+                title: "5. Списки и кортежи",
+                description: "Работа с коллекциями данных. Методы списков",
+                duration: "25 минут",
+                videoTitle: "Списки и кортежи",
+                fullDescription: "Изучаем списки (list) и кортежи (tuple) — основные структуры данных в Python."
+            },
+            {
+                title: "6. Функции",
+                description: "Создание и вызов функций. Параметры и возврат значения",
+                duration: "35 минут",
+                videoTitle: "Функции",
+                fullDescription: "Создаём собственные функции, работаем с параметрами и возвращаемыми значениями."
+            }
+        ];
+
+        // Открыть урок
+        function openLesson(index) {
+            const lesson = lessons[index];
+            
+            // Заполняем данные
+            document.getElementById('videoTitle').textContent = lesson.videoTitle;
+            document.getElementById('lessonTitle').textContent = lesson.title;
+            document.getElementById('lessonDescription').textContent = lesson.fullDescription;
+            
+            // Показываем просмотр урока
+            document.getElementById('lessonsList').style.display = 'none';
+            document.getElementById('lessonView').style.display = 'block';
+            
+            // Обновляем боковую панель
+            updateSidebar(index);
+            
+            // Прокрутка вверх
+            window.scrollTo(0, 0);
+        }
+
+        // Вернуться к списку
+        function backToList() {
+            document.getElementById('lessonsList').style.display = 'block';
+            document.getElementById('lessonView').style.display = 'none';
+            window.scrollTo(0, 0);
+        }
+
+        // Обновить боковую панель
+        function updateSidebar(activeIndex) {
+            const sidebar = document.getElementById('sidebarLessonsList');
+            sidebar.innerHTML = '';
+            
+            lessons.forEach((lesson, index) => {
+                const item = document.createElement('div');
+                item.className = 'sidebar-lesson-item' + (index === activeIndex ? ' active' : '');
+                item.onclick = () => openLesson(index);
+                item.innerHTML = `
+                    <span class="sidebar-icon">${index === activeIndex ? '▶' : '📹'}</span>
+                    <span class="sidebar-title">${lesson.title}</span>
+                    <span class="sidebar-duration">${lesson.duration}</span>
+                `;
+                sidebar.appendChild(item);
+            });
+        }
+
+        // Инициализация боковой панели
+        updateSidebar(-1);
+    </script>
 
 </body>
 </html>

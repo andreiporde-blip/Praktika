@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация — ЦифроПомощник</title>
+    <title>Вход — ЦифроПомощник</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,43 +18,36 @@
             <nav class="nav">
                 <a href="index.html">Главная</a>
                 <a href="courses.html">Курсы</a>
-                <a href="register.html" class="active">Профиль</a>
+                <a href="register.html">Профиль</a>
                 <a href="lesson.html">Уроки</a>
             </nav>
-            <a href="login.html" class="btn-login">ВОЙТИ</a>
+            <a href="login.html" class="btn-login active">ВОЙТИ</a>
         </div>
     </header>
 
     <section class="cabinet-banner">
         <div class="container">
-            <h1>Личный кабинет</h1>
-            <p>Добро пожаловать! Вы еще не авторизованы.<br>Для доступа к курсам необходимо войти или создать аккаунт.</p>
+            <h1>Вход в личный кабинет</h1>
+            <p>Введите свои данные для доступа к курсам</p>
         </div>
     </section>
 
     <section class="register-section">
         <div class="container">
-            <h2 class="register-title">Регистрация</h2>
+            <h2 class="register-title">Вход</h2>
             <form class="register-form">
-                <input type="text" placeholder="Введите ФИО" required>
                 <input type="email" placeholder="Ваш E-Mail" required>
                 <input type="password" placeholder="Пароль" required>
-                <input type="password" placeholder="Подтвердите пароль" required>
-
-                <div class="radio-group">
-                    <span>Я:</span>
-                    <label><input type="radio" name="role" value="school"> Школьник</label>
-                    <label><input type="radio" name="role" value="student" checked> Студент</label>
-                </div>
 
                 <label class="checkbox-label">
-                    <input type="checkbox" required>
-                    Согласен с условиями использования
+                    <input type="checkbox">
+                    Запомнить меня
                 </label>
 
-                <button type="submit" class="btn-register">Зарегистрироваться</button>
+                <button type="submit" class="btn-register">Войти</button>
 
-                <p class="login-link">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                <p class="login-link">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+                <p class="login-link"><a href="#">Забыли пароль?</a></p>
             </form>
         </div>
     </section>
